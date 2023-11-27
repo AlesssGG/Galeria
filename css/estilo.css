@@ -1,0 +1,109 @@
+h1 {
+    font-family: 'Young Serif', serif;
+    color: rgb(51, 0, 255);
+}
+
+h3{
+    font-family: 'Alumni Sans Inline One', sans-serif;
+}
+
+p {
+    font-family: 'Playpen Sans', cursiva;
+}
+
+.div-general {
+    background-color: rgb(183, 205, 239);
+    width: auto;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 50%; /* Coloca el logo en el centro horizontal */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    transform: translateX(-50%); /* Ajusta la posición del logo en el centro horizontal */
+}
+
+.logo img {
+    width: 80px; /* Ajusta el ancho del logotipo según tus preferencias */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.parragraph1 {
+    color: #0000FF;
+}
+
+.parragraph2 {
+    color: #FF0000;
+}
+
+.parragraph3 {
+    color: #008000;
+}
+
+.parragraph4 {
+    color: #800080;;
+}
+
+.parragraph5 {
+    color: #FFA500;
+}
+
+.parragraph6 {
+    color: #A52A2A;
+}
+
+.parragraph7{
+    color:#0000FF;
+}
+.parragraph8{
+    color:#FF00D8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 20px;
+}
+
+body {
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left; /* Para que los elementos estén en línea */
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 3px solid rgb(38, 103, 225); /* Bordes para el efecto de elipse */
+    border-radius: 50%; /* Hace que el borde tenga forma de círculo (elipse en este caso) */
+}
+
+li a:hover {
+    background-color: rgb(62, 166, 245); /* Color de fondo al pasar el mouse */
+}
+
+
+
