@@ -3,76 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con todos los controles</title>
-    
+    <title>Otro Formulario Estilizado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto; /* Alinea el formulario al centro */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+      
+    </style>
 </head>
 <body>
-    <form action="/procesar" method="post">
-        <label for="texto">Texto:</label>
-        <input type="text" id="texto" name="texto" required>
 
-        <br>
-
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
-
-        <br>
-
-        <label for="numero">Número:</label>
-        <input type="number" id="numero" name="numero" required>
-
-        <br>
+    <form id="miOtroFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
         <label for="correo">Correo electrónico:</label>
         <input type="email" id="correo" name="correo" required>
 
-        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
 
-        <label for="url">URL:</label>
-        <input type="url" id="url" name="url" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="99" required>
 
-        <br>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
 
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required>
+        <label for="aceptoTerminos">Acepto los términos y condiciones:</label>
+        <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
 
-        <br>
+        <label for="color">Seleccionar color:</label>
+        <input type="color" id="color" name="color">
 
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora" required>
+        <label for="sitioWeb">Sitio web:</label>
+        <input type="url" id="sitioWeb" name="sitioWeb">
 
-        <br>
+        <label for="numeroTelefono">Número de teléfono:</label>
+        <input type="tel" id="numeroTelefono" name="numeroTelefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Formato: 123-45-678" required>
 
-        <label for="archivo">Archivo:</label>
-        <input type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png" required>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea>
 
-        <br>
-
-        <label for="color">Color:</label>
-        <input type="color" id="color" name="color" value="#ff0000" required>
-
-        <br>
-
-        <label for="checkbox">Checkbox:</label>
-        <input type="checkbox" id="checkbox" name="checkbox">
-
-        <br>
-
-        <label for="radio1">Radio 1:</label>
-        <input type="radio" id="radio1" name="radio" value="opcion1">
-
-        <label for="radio2">Radio 2:</label>
-        <input type="radio" id="radio2" name="radio" value="opcion2">
-
-        <br>
-
-        <label for="textarea">Área de texto:</label>
-        <textarea id="textarea" name="textarea" rows="4" cols="50" required></textarea>
-
-        <br>
-
-        <button type="submit">Enviar</button>
+        <button type="submit">Guardar</button>
+        <button type="reset">Reiniciar</button>
     </form>
+
 </body>
 </html>
+
+
+
 
